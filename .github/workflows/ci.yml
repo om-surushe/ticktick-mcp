@@ -33,7 +33,7 @@ jobs:
         run: bun test
 
       - name: Build
-        run: bun run build
+        run: bun run build:bun
 
       - name: Check build output
         run: |
@@ -41,7 +41,7 @@ jobs:
             echo "Build failed - dist/index.js not found"
             exit 1
           fi
-          echo "✅ Build successful"
+          echo "✅ Bun build successful"
 
   compatibility:
     name: Node Compatibility Check
