@@ -1,5 +1,5 @@
 {
-  "name": "@omsurushe/efficient-ticktick",
+  "name": "@om-surushe/efficient-ticktick",
   "version": "0.1.0",
   "description": "Efficient TickTick MCP - LLM-optimized task management with intelligent time handling and 70% lower token costs",
   "type": "module",

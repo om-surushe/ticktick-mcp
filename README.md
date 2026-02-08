@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![Bun](https://img.shields.io/badge/Bun-1.0+-f472b6.svg)](https://bun.sh/)
-[![npm](https://img.shields.io/badge/npm-@omsurushe/efficient--ticktick-red.svg)](https://www.npmjs.com/package/@omsurushe/efficient-ticktick)
+[![npm](https://img.shields.io/badge/npm-@om--surushe/efficient--ticktick-red.svg)](https://www.npmjs.com/package/@om-surushe/efficient-ticktick)
 
 **Part of the Efficient MCP series - TickTick task management optimized for LLMs with 70% lower token costs.**
 
@@ -40,14 +40,14 @@ Traditional task management APIs are built for human UIs. When an LLM uses them,
 
 ### Using npx/bunx (Recommended)
 ```bash
-bunx @omsurushe/efficient-ticktick
+bunx @om-surushe/efficient-ticktick
 ```
 
 ### Global Install
 ```bash
-npm install -g @omsurushe/efficient-ticktick
+npm install -g @om-surushe/efficient-ticktick
 # or
-bun install -g @omsurushe/efficient-ticktick
+bun install -g @om-surushe/efficient-ticktick
 ```
 
 ### From Source
@@ -75,7 +75,7 @@ Add to your OpenClaw gateway config:
   "mcpServers": {
     "efficient-ticktick": {
       "command": "bunx",
-      "args": ["@omsurushe/efficient-ticktick"],
+      "args": ["@om-surushe/efficient-ticktick"],
       "env": {
         "TICKTICK_TOKEN": "tp_your_token_here",
         "TIMEZONE": "Asia/Kolkata"
@@ -92,7 +92,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "efficient-ticktick": {
       "command": "bunx",
-      "args": ["@omsurushe/efficient-ticktick"],
+      "args": ["@om-surushe/efficient-ticktick"],
       "env": {
         "TICKTICK_TOKEN": "tp_your_token_here",
         "TIMEZONE": "America/New_York"

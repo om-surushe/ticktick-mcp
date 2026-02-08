@@ -32,7 +32,7 @@ const tools = new TickTickTools(client, enricher);
 // Create MCP server
 const server = new Server(
   {
-    name: '@omsurushe/efficient-ticktick',
+    name: '@om-surushe/efficient-ticktick',
     version: '0.1.0',
   },
   {
