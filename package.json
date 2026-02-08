@@ -1,0 +1,54 @@
+{
+  "name": "ticktick-mcp",
+  "version": "0.1.0",
+  "description": "LLM-optimized MCP server for TickTick task management with intelligent time handling",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ticktick-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target node --format esm && bun run build:types",
+    "build:types": "tsc --emitDeclarationOnly --declaration --outDir dist",
+    "dev": "bun run --watch src/index.ts",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write 'src/**/*.ts'",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "ticktick",
+    "task-management",
+    "llm",
+    "ai-assistant",
+    "productivity"
+  ],
+  "author": "Om Surushe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/om-surushe/ticktick-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/om-surushe/ticktick-mcp/issues"
+  },
+  "homepage": "https://github.com/om-surushe/ticktick-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  }
+}
